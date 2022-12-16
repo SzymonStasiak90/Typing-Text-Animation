@@ -1,0 +1,31 @@
+:root{
+    --caret-display:inline-block;
+}
+body{
+    background-color: black;
+}
+section{
+    width: 870px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    bottom:100px;
+    left:0;
+    right:0;
+    margin:auto;
+    -webkit-box-align: center;
+    display: -webkit-box;
+}
+div{
+    font-size: 60px;
+    color: aquamarine;
+}
+div::after{
+    content: '';
+    width: 4px;
+    height: 70px;
+    background-color: aquamarine;
+    margin-bottom: -14px;
+    margin-left: -18px;
+    display: var(--caret-display);
+}
