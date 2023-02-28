@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+button{
+    margin: 20rem;
+    padding: 2rem 4rem;
+    background: none; 
+}
+
+
+button:nth-child(1){
+    border: 0.3rem solid blueviolet;
+    color:blueviolet;
+    font-size: 2.4rem;
+    border-radius: 1rem;
+    border-top-left-radius: 2rem;
+    background-color: lightsteelblue;
+}
+button:nth-child(2){
+    border: 0.3rem dotted red;
+}
+button:nth-child(3){
+    border: 0.3rem dashed  blue;
+}
+button:nth-child(4){
+    border: 0.3rem groove orange;
+}
+button:nth-child(5){
+    border: 0.3rem double pink;
+}
+button:nth-child(6){
+    border: 0.3rem ridge green;
+}

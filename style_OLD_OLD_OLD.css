@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 62.5%;
+    height: 100%;
+}
+h1{
+    background-color: lightcoral;
+    height: 5rem;
+}
+a{
+    background: lightseagreen; 
+    height: 10rem;                     /* Inline elemetns can not be high or width */
+    width: 10rem;
+    margin: 3rem;                     /* Inline elemetns support margins but ONLY in left and right orientation */          
+    text-align: center;
+
+    display: block;                     /*Aby uzywac pwoyzszych wlasciwosci nalezy zmienic typ elementu z INLINE na BLOCK*/
+    display: inline-block;              /*To polaczenie inline oraz block*/
+}
+img{
+    display: inline-block;
+}
+
+.container{
+    background: slateblue;
+    width: 80%;
+    height: 1500px;
+    margin: auto;                      /*Margin dziala tylko jesli width i height nie sa ustawione na 100%*/
+    position: relative;                /*position relative oznacza ze tworzymy z tego obiektu punkt odniesienia. 
+                                        Czyli pozycjonujac obiekty wewnatrz containera beda one traktowaly go jako jedyny obszar w ktorym moga sie poruszac. 
+                                        Oznacza to ze ustawienie obiektu na srodku sprawi ze znajdzie sie w srodku  containera a nie w srodku strony*/                     
+}
+
+.box1,.box2,.box3{
+    width: 20%;
+    height: 20%;
+}
+.box1{
+    background-color: lightskyblue;
+    position: static;                   /*Standardowo obiekty maja domyslnie ustawiona position static*/
+    position: absolute;                 /* Jezeli chcemy usawic je inaczej musimy uzyc wlasciwosci ABSOLUTE. Po jej zastosowaniu mamy dostep do dodatkowych wlasciwosci*/
+    bottom: 50%;
+    right: 50%;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50% -50%);
+}
+.box1:hover{
+    background-color: aqua;
+    height: 10rem;
+    width: 20rem;
+    cursor:zoom-in;
+}
+
+.box2{
+    background-color: lightslategray;
+    transform:  translateX(100%);
+}
+a:focus{
+    background-color: blue;
+}
+.box3{
+    background-color: lightpink;
+    position: fixed;           /*Obiekt przykleja sie do strony nawet jesli skrolujesz to zostaje w tym samym miejscu na ekranie */
+    transform: translatex(140%);
+}
+.box4{
+    background-color: rgb(86, 208, 139);
+    position: sticky;           /*Obiekt przykleja sie do wskazanej czesci ekranu i nie moze przekroczyc okreslonej ponizej wartosci*/
+    top: 5%;
+}
+
+h1::before{
+    content: "To jest ";
+}
+
+h1::after{
+    content: " kurwa";
+}

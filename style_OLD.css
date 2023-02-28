@@ -1,0 +1,85 @@
+p{
+    color:cornflowerblue;
+}
+.first-text{
+    color:rgb(175, 34, 214)
+}
+#second-text{
+    color: cadetblue;
+}
+h1{
+    color: aquamarine;
+}
+.random-class-name h1{
+    color: red;
+}
+
+ul{
+    color: chocolate;
+}
+ul > li {
+    color: blueviolet;
+}
+li{
+    color:darkorange;
+}
+.a {
+    color: crimson;
+}
+ul li:nth-child(3){
+    color: blue;
+}
+
+#header-id{
+    color: blueviolet;
+}
+.header{
+    color: darkolivegreen;
+}
+h2{
+    color:pink !important;
+}
+
+h2{
+    color:coral
+}
+h2{
+    color: cornflowerblue
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: darkslategray;
+    color:aliceblue;
+    width:100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: 50px solid black;
+}
+
+button{
+    padding: 50px/*TOP*/20px/*Right*/10px/*BOT*/5px/*Left*/;                           /*INside element space*/
+    margin: 50px;                                                                      /*OUTside element space*/  
+    background-color: brown;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.text-section{
+    /*font-size: 20px;        /*Oznaczenia czcionki w px nie ulegaja zmianie na telefonach lub w wyniku specjalnych ustawien przegladarki (Niedowidzacy) */
+    font-size: 1.5em;       /*1em = 16px  znacznik em multiplikuje rozmiar rodzica*/
+    font-size: 1rem;
+}
+
+.text-section div{
+    font-size: 1.6rem;       
+}

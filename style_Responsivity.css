@@ -1,0 +1,43 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    background-color: lightcoral;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+div {
+    height: 80vw; /*dzieki 100VH wskazany element zajmuje Automatycznie cala dostepna wysokosc strony. Bardzo przydatne przy responsywnosci*/
+    background-color: cadetblue;
+    font-size: calc(2.4rem +1vw);
+}
+
+div h2 {
+    height: 05vw;
+    background-color: coral;
+    font-size: calc(2.4rem +1vw);
+    color: royalblue;
+}
+@media (min-width: 500px) and (max-width: 1024px){
+    div p {
+        font-size: calc(2.4rem +2vw); /*Dzieki calc() mozemy skalowac */
+    }
+}
+
+
+/*Roznica pomiedzy VH a VW 
+
+    VH - dziala w obszarze wyznaczonym przez parent area.
+    VW - dziala w relacji do calego ekranu z pominienciem zaleznosci z parent from.
+
+
+*/

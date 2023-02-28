@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 3px solid black;
+    display: flex;
+}
+
+.box{
+    height: 10rem;
+    width: 10rem;
+}
+
+.box1{
+    background-color: aqua;
+}
+.box2{
+    background-color:blueviolet;
+}
+.box3{
+    background-color:burlywood;
+}
+.box4{
+    background-color:darkblue
+}
+.box5{
+    background-color:coral;
+}
+.box6{
+    background-color:deeppink;
+}
