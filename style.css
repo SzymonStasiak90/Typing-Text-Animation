@@ -7,28 +7,42 @@
 .container{
     border: 3px solid black;
     display: flex;
+    /*flex-direction: row; /*flex-direction: row - to domyslne ustawienie dla display flex. ale mozna je zmienic na column / column reverse / row reverse*/
+    flex-wrap: wrap;  /*Wlasciwosc umozliwiajaca zwijanie elementow na stronie kiedy przestrzen ekranu sie zmniejsza. Pomocne przy responsywnosci*/
+    /*justify-content: space-evenly; /*wlasciwosc umieszajaca zawartosc rodzica HORYZONTALNIE w okreslonym miejscu: center / flex-end / flex-start/ */
+    /*align-items: center; /*wlasciwosc umieszajaca zawartosc rodzica WERTYKALNIE w okreslonym miejscu: center / flex-end / flex-start/ space around */
+    height: 50vh;
+    /*align-content: space-around; /*Nie wiem czym to sie rozni w tej chwili :/ */ 
 }
 
-.box{
+
+.box{   /*FAJNE dziala dzicki flex basis*/
     height: 10rem;
     width: 10rem;
+    flex-basis: 20rem;
+    flex-grow: 1;
 }
 
 .box1{
-    background-color: aqua;
+    background-color: rgb(39, 175, 175);
+    order: 6; /*dzieki wlasciwosci order mozesz wymusic umiejscowienie elementu we wskazanej kolejnosci */
 }
 .box2{
-    background-color:blueviolet;
+    background-color:rgb(116, 51, 177);
+    ;
+    /*flex-grow: 2; /*Flex-grow sprawia ze wybrany element bedzie X wiekszy niz wszystkie pozostale*/
+    
 }
 .box3{
-    background-color:burlywood;
+    background-color:rgb(198, 207, 131);
+    flex-shrink: 40rem;  /*Nie wiem o co z tym chodzi. niby ze nie moze sie zmniejszyc bardziej niz wskazana wielkosc*/
 }
 .box4{
-    background-color:darkblue
+    background-color:rgb(52, 52, 188)
 }
 .box5{
-    background-color:coral;
+    background-color:rgb(224, 143, 114);
 }
 .box6{
-    background-color:deeppink;
+    background-color:rgb(224, 83, 158);
 }
